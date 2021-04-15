@@ -15,6 +15,10 @@
 		98FFC8F12628DCBD00B87463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FFC8EF2628DCBD00B87463 /* LaunchScreen.storyboard */; };
 		98FFC8FC2628DCBE00B87463 /* RobustaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFC8FB2628DCBE00B87463 /* RobustaTaskTests.swift */; };
 		98FFC9072628DCBE00B87463 /* RobustaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFC9062628DCBE00B87463 /* RobustaTaskUITests.swift */; };
+		98FFC9202628E2B900B87463 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFC91F2628E2B900B87463 /* Owner.swift */; };
+		98FFC9252628E3FC00B87463 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFC9242628E3FC00B87463 /* Repository.swift */; };
+		98FFC92B2628E65400B87463 /* RepositoriesGetway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFC92A2628E65400B87463 /* RepositoriesGetway.swift */; };
+		98FFC9312628E98400B87463 /* DisplayRepositoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FFC9302628E98400B87463 /* DisplayRepositoriesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		98FFC9022628DCBE00B87463 /* RobustaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobustaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FFC9062628DCBE00B87463 /* RobustaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaTaskUITests.swift; sourceTree = "<group>"; };
 		98FFC9082628DCBE00B87463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98FFC91F2628E2B900B87463 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		98FFC9242628E3FC00B87463 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		98FFC92A2628E65400B87463 /* RepositoriesGetway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesGetway.swift; sourceTree = "<group>"; };
+		98FFC9302628E98400B87463 /* DisplayRepositoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRepositoriesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		98FFC8D82628DCBC00B87463 = {
 			isa = PBXGroup;
 			children = (
+				98FFC91A2628E22500B87463 /* Core */,
 				98FFC8E32628DCBC00B87463 /* RobustaTask */,
 				98FFC8FA2628DCBE00B87463 /* RobustaTaskTests */,
 				98FFC9052628DCBE00B87463 /* RobustaTaskUITests */,
@@ -126,6 +135,41 @@
 				98FFC9082628DCBE00B87463 /* Info.plist */,
 			);
 			path = RobustaTaskUITests;
+			sourceTree = "<group>";
+		};
+		98FFC91A2628E22500B87463 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				98FFC91E2628E2AB00B87463 /* Entites */,
+				98FFC9292628E5CD00B87463 /* Getways */,
+				98FFC92F2628E95700B87463 /* UseCases */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		98FFC91E2628E2AB00B87463 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				98FFC91F2628E2B900B87463 /* Owner.swift */,
+				98FFC9242628E3FC00B87463 /* Repository.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		98FFC9292628E5CD00B87463 /* Getways */ = {
+			isa = PBXGroup;
+			children = (
+				98FFC92A2628E65400B87463 /* RepositoriesGetway.swift */,
+			);
+			path = Getways;
+			sourceTree = "<group>";
+		};
+		98FFC92F2628E95700B87463 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				98FFC9302628E98400B87463 /* DisplayRepositoriesList.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98FFC9202628E2B900B87463 /* Owner.swift in Sources */,
+				98FFC9312628E98400B87463 /* DisplayRepositoriesList.swift in Sources */,
 				98FFC8E92628DCBC00B87463 /* ViewController.swift in Sources */,
+				98FFC92B2628E65400B87463 /* RepositoriesGetway.swift in Sources */,
+				98FFC9252628E3FC00B87463 /* Repository.swift in Sources */,
 				98FFC8E52628DCBC00B87463 /* AppDelegate.swift in Sources */,
 				98FFC8E72628DCBC00B87463 /* SceneDelegate.swift in Sources */,
 			);
